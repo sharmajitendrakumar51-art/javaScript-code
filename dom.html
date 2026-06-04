@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="main">
+        Welcome to fun platform..
+    </div>
+     <div id="content">
+        Welcome to fun platform..
+          just fun & chill...
+          <h4>hello guys !</h4>
+    </div>
+     <div class="main">
+        Welcome to fun platform..
+        just fun & chill...
+    </div>
+    <div class="main">
+       Jai shri ram..
+    </div>  -->
+    
+ <!-- ***Calculator**** -->
+    <!-- <input type="number" id="first">
+    <select name="" id="ope">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" id="second">
+    <button onclick="cal()">calculate</button>
+    <input type="number" id="cal">  -->
+
+    <!-- prompt function.. 
+     Name: <i id="result"></i>
+     <br>
+     <button onclick="call()">call</button>-->
+  <div id="heading">welcome to <u> fun & chill</u>...</div>
+   <div id="res"></div>
+
+  
+  <h3>jai shri ram</h3>
+  <h3>jai shri shyam</h3>
+  <h3>jai shri ram</h3>
+
+  <div class="classEle">jeetu whats up..</div>
+  <div class="classEle">sachin</div>
+  <div class="classEle">rahul</div>
+
+  <h4 id="cont">hello this side jeetu sharma..</h4>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, autem.</p>
+
+  <h1>coading is fun</h1>
+  <h1>coading is fun</h1>
+  <h1>coading is fun</h1>
+  <h1>coading is chill</h1>
+  
+  <button id="btn"> click me</button>
+ 
+
+</body>
+<script type="text/javascript" >
+     
+     
+     let date=document.getElementById("#btn");
+      date.addEventListener("click",()=>{
+      alert(Date());
+      })
+     
+    //**document.getElementById(id)**
+    let headingElement = document.getElementById("heading");
+    console.log(headingElement.innerHTML);
+    console.log(headingElement.innerText);
+    let resElement = document.getElementById("res");
+    resElement.innerHTML =headingElement.innerHTML;
+    
+    //**document.getElementsByTagName(name)**
+    let Alltag = document.getElementsByTagName("h3");
+    console.log(Alltag);
+    console.log(Alltag[1].innerHTML);
+    
+    //**document.getElementsByClassName(name)**
+    let Allclass = document.getElementsByClassName("classEle");
+    console.log(Allclass);
+    console.log(Allclass[0].innerHTML)
+   
+    //**document.querySelector(selector)**
+    let query = document.querySelector("h4");
+    console.log(query);
+    let query2 = document.querySelector("#cont");
+    console.log(query2);
+
+    //**document.querySelectorAll(selector)**
+    let queryAll=document.querySelectorAll("h1");
+    console.log(queryAll);
+    console.log(queryAll[3].innerHTML);
+    queryAll.forEach((item,index)=>{
+      console.log(item);
+    })
+</script>
+</html>
+
+
+
+  <!-- <script type="text/javascript">
+    alert("Jai Shri Ram");
+    console.log("jai shri ram");
+     document.write("<h1>jai shri ram..</h1>");
+     document.write("<h1>hello</h1>");
+    prompt("please enter your name","");
+    confirm("do you want to login ?");
+
+// ****.variable.****
+    var name;
+    name="jeetu";
+    var name = "sharma";
+    alert(name);
+
+//  **Dom**..
+document.getElementById("main");
+var x = document.getElementById("content").innerHTML;
+console.log(x);
+document.getElementById("content").innerHTML = "<h1> Welcome to fun platform..</h1>";
+
+var y = document.getElementsByClassName("main")[1].innerHTML;
+alert(y);
+console.log(y);
+document.getElementsByClassName("main")[0].innerHTML="jai shri ram..";
+document.getElementsByClassName("main")[1].innerHTML ="just fun and chill..";
+
+// string methods..
+var x ="jeetu ";
+var y= "sharma";
+var z = x+y+" from jaipur..";
+alert(z);
+
+var a=10;
+var b=20;
+var c=a+b;
+alert(c);
+alert(a==b);
+
+// ***Calculator****
+    function cal(){
+       var opr1= document.getElementById("first").value;
+       var opr2= document.getElementById("second").value;
+       var ope= document.getElementById("ope").value;
+        if(ope == "+"){
+            var res = parseInt(opr1)+parseInt(opr2);
+        }
+          if(ope == "-"){
+            var res = parseInt(opr1)-parseInt(opr2);
+        }
+          if(ope == "*"){
+            var res = parseInt(opr1)*parseInt(opr2);
+        }
+          if(ope == "/"){
+            var res = parseInt(opr1) / parseInt(opr2);
+        }
+          if(ope == "%"){
+            var res = parseInt(opr1) % parseInt(opr2);
+        }
+         document.getElementById("cal").value = res;
+         alert(res);
+    }
+      
+      //...prompt function...
+      function call(){
+        var name = prompt("Enter your name"," ");
+        // document.write(result);
+        document.getElementById("result").innerHTML = name;
+      }
+     
+     var cars =[];
+     cars = ["car2" ,"car1", "car3"];
+     document.write(cars[2]);
+
+     var players = new Array();
+     players = ["jeetu" ,"sachin", "ram" ,"shyam"];
+     document.write(players[2]);
+
+     players.forEach(team);
+     function team(players ,index){
+        document.write(index+ " =>"+players+"</br>");
+     }
+</script>
+</html> -->

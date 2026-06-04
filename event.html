@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEvent</title>
+    <style>
+        .activepara{
+            font-size: 20px;
+            font-family: cursive;
+            background: linear-gradient(to right ,green ,yellow);
+        }
+
+    </style>
+</head>
+<body>
+    <button id="css">CSS</button>
+    <button id="add">ADD Class</button>
+    <button id="remove">Remove class</button>
+    <button id="toggle">Toggle Class</button>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <button id="clock">click me</button>
+</body>
+<script>
+      let btn1 = document.querySelector("#css");
+      let para =document.querySelector("p");
+      
+      btn1.addEventListener("click",()=>{
+        para.style.color="hotpink";
+      })
+      let btn2 = document.querySelector("#add");
+      btn2.addEventListener("click",()=>{
+        para.classList.add("activepara");
+      })
+       let btn3 = document.querySelector("#remove");
+      btn3.addEventListener("click",()=>{
+       para.classList.remove("activepara");
+      })
+      let btn4 = document.querySelector("#toggle");
+      btn4.addEventListener("click",()=>{
+        btn4.classList.toggle("activepara");
+       para.classList.toggle("activepara");
+      })
+         
+     let date=document.getElementById("clock");
+      date.addEventListener("click",()=>{
+      prompt(Date());
+      })
+     
+</script>
+</html>
